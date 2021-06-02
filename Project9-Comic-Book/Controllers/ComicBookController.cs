@@ -8,6 +8,9 @@ namespace Project9_Comic_Book.Controllers
 {
     public class ComicBookController : Controller
     {
-       
+       public string Detail()
+        {
+            return "Hello from the back end development";
+        }
     }
 }

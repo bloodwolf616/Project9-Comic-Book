@@ -8,9 +8,19 @@ namespace Project9_Comic_Book.Controllers
 {
     public class ComicBookController : Controller
     {
-       public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello from the back end development";
+
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+            {
+                return Redirect("/");
+               
+            }
+
+            return Content("Hello from the console.");
+
+           
+
         }
     }
 }

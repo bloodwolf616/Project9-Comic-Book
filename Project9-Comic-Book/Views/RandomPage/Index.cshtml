@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = "../Shared/_Layout2.cshtml";
+    ViewBag.Title = "Index";
+
+}
+<div>
+
+    <p> Welcome to my page</p>
+
+</div>
+
+
+<div>
+    @if (ViewBag.GroceryList.Length > 0)
+    {
+        <h4>GroceryList: </h4>
+        foreach(var item in ViewBag.GroceryList)
+        {
+            <li>@item</li>
+            
+        }
+    }
+
+
+
+</div>
+

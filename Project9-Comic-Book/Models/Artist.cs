@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Project9_Comic_Book.Models
 {
-    public class Artists
+    public class Artist
     {
         public string Name { get; set; }
         public string Role { get; set; }

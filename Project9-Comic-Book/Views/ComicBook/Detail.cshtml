@@ -1,12 +1,16 @@
-﻿@model Project9_Comic_Book.Models.ComicBook
+﻿
+@*Importing our comic model so we dont have to use ViewBag object*@
+@model Project9_Comic_Book.Models.ComicBook
 
 
+
+@*adding our layout that contains our css*@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = Model.DisplayText;
 }
 
-
+@*our view that is inside the layout.*@
 <h2>@Model.DisplayText</h2>
 
 <div class="row">

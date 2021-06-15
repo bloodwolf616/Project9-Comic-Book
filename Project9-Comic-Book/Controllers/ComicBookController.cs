@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+//passing our data repsository and model.
 using Project9_Comic_Book.Data;
 using Project9_Comic_Book.Models;
 
@@ -27,11 +28,13 @@ namespace Project9_Comic_Book.Controllers
             {
                 return HttpNotFound();
             }
+           
+            //We are passing comic book model from a repository to the view
             ComicBook comicBook = _comicBookRepository.GetComicBook((int)id);
 
            
           
-
+            //passing our model to the view
             return View(comicBook);
 
            

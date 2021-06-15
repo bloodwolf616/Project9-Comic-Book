@@ -70,6 +70,11 @@ namespace Project9_Comic_Book.Data
 
 
 
+            public ComicBook[] getComicBooks()
+        {
+            return _comicBooks;
+        }
+
             public ComicBook GetComicBook(int id)
             {
 

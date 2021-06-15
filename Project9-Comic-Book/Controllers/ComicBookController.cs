@@ -29,7 +29,7 @@ namespace Project9_Comic_Book.Controllers
                 return HttpNotFound();
             }
            
-            //We are passing comic book model from a repository to the view
+            //We are collecting our comic book model from our repository.
             ComicBook comicBook = _comicBookRepository.GetComicBook((int)id);
 
            
